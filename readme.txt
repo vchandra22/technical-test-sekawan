@@ -20,6 +20,10 @@ Laravel Framework 10.15.0
 TailwindCSS v3.3.3
 Flowbite (Component UI)
 
+--OS Pengembangan--
+Linux Ubuntu 22.04.2 LTS
+VS Code (Text Editor)
+
 --Panduan Penggunaan Aplikasi--
 1. Pengguna dapat melakukan register kemudian dapat login menggunakan akun yang telah dibuat
 2. Pengguna baru akan di assign sebagai "admin"
@@ -29,15 +33,16 @@ Flowbite (Component UI)
 6. Pengguna dapat melihat log aktivitas pada menu "Log Aktivitas"
 7. Pengguna dapat mengubah profil dan password pada menu "Profile"
 
-!PENTING pengguna dengan role "verifikator" hanya dapat melihat dan menyetujui status kendaraan yang telah di ajukan oleh "admin"
+!PENTING pengguna dengan role "verifikator" hanya dapat melihat kendaraan dan menyetujui status kendaraan yang telah di ajukan oleh "admin"
 
 --Panduan Konfigurasi--
 1. Clone project dari repository github ( https://github.com/vchandra22/technical-test-sekawan.git )
-2. Import database mySQL dari file laravel.sql
-3. Buka folder yang telah di unduh dari repository github ke Text Editor
-4. Buka command dan jalankan perintah "composer install && npm install"
-5. cp .env.example .env lalu edit dan sesuaikan bagian database di file .env
-6. Jalankan perintah "php artisan key:generate, lalu "php artisan serve"
-7. (optional) jika aplikasi tidak dapat berjalan, lakukan perintah "npm run build"
+2. Jalankan XAMPP/LAMPP
+3. Import database mySQL dari file laravel.sql
+4. Buka folder yang telah diunduh dari repository github menggunakan Text Editor
+5. Buka command (*pastikan direktori folder sesuai) dan jalankan perintah "composer install && npm install"
+6. cp .env.example -> .env lalu edit dan sesuaikan bagian database di file .env
+7. Jalankan perintah "php artisan key:generate, lalu "php artisan serve"
+8. (optional) jika aplikasi tidak dapat berjalan, lakukan perintah "npm run build"
 
 
