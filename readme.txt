@@ -15,6 +15,11 @@ with Zend OPcache v8.2.8, Copyright (c), by Zend Technologies
 --Database Version--
 8.0.33-0ubuntu0.22.04.4
 
+--etc--
+Composer version 2.5.5
+npm version 9.5.1
+node version 18.16.0
+
 --Framework--
 Laravel Framework 10.15.0
 TailwindCSS v3.3.3
