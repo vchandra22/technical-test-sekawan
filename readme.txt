@@ -36,7 +36,7 @@ Flowbite (Component UI)
 2. Import database mySQL dari file laravel.sql
 3. Buka folder yang telah di unduh dari repository github ke Text Editor
 4. Buka command dan jalankan perintah "composer install && npm install"
-5. copy .env.example .env lalu edit dan sesuaikan bagian database di file .env
+5. cp .env.example .env lalu edit dan sesuaikan bagian database di file .env
 6. Jalankan perintah "php artisan key:generate, lalu "php artisan serve"
 7. (optional) jika aplikasi tidak dapat berjalan, lakukan perintah "npm run build"
 
