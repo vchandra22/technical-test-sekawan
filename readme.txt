@@ -31,7 +31,7 @@ Flowbite (Component UI)
 
 --Panduan Konfigurasi--
 1. Clone project dari repository github ( https://github.com/vchandra22/technical-test-sekawan.git )
-2. Import database pada folder "Import DB" (laravel.sql)
+2. Import database mySQL dari file laravel.sql
 3. Buka folder yang telah di unduh dari repository github ke Text Editor
 4. Buka command dan jalankan perintah "composer install && npm install"
 5. copy .env.example .env lalu edit dan sesuaikan bagian database di file .env
