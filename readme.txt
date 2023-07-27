@@ -3,6 +3,8 @@ password admin = 123123123
 
 username verifikator = reza.darmawan12@gmail.com
 password verifikator = 123123123
+username verifikator = putrimustika.24@gmail.com
+password verifikator = 123123123
 
 --PHP Version--
 PHP 8.2.8 (cli) (built: Jul  8 2023 07:10:21) (NTS)
