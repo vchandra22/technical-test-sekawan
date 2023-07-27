@@ -30,7 +30,7 @@ Flowbite (Component UI)
 !PENTING pengguna dengan role "verifikator" hanya dapat melihat dan menyetujui status kendaraan yang telah di ajukan oleh "admin"
 
 --Panduan Konfigurasi--
-1. Clone project dari repository github (  )
+1. Clone project dari repository github ( https://github.com/vchandra22/technical-test-sekawan.git )
 2. Import database pada folder "Import DB" (laravel.sql)
 3. Buka folder yang telah di unduh dari repository github ke Text Editor
 4. Buka command dan jalankan perintah "composer install && npm install"
