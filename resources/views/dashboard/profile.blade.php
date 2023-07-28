@@ -30,6 +30,11 @@
                                     <input type="text" name="name" id="name"
                                         class="bg-white border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                         value="{{ $p->name }}">
+                                    @error('name')
+                                        <div class="mt-1 text-sm text-red-600" id="name">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                                 </div>
                                 <div>
                                     <label for="role"
@@ -46,10 +51,11 @@
                                         @endforeach
                                     </select>
                                 </div>
-                                <div
-                                    class="px-42 w-full py-2 mt-8 bg-blue-700 rounded-[12px] border-gray-500 text-xl text-semibold text-center text-white cursor-pointer hover:opacity-90 md:px-64">
-                                    <button type="submit">
-                                        Ubah
+                                <div>
+                                    <button type="submit" class="px-42 w-full py-2 mt-8 bg-blue-700 rounded-[12px] border-gray-500 text-xl text-semibold text-center text-white cursor-pointer hover:opacity-90 md:px-64" style="background-color: rgb(26 86 219)">
+                                        <div>
+                                            Ubah
+                                        </div>
                                     </button>
                                 </div>
                             @endforeach

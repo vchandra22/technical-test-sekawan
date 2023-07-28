@@ -71,17 +71,18 @@ class ProfileController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required',
-            'role' => 'required', // You might want to validate the 'role' field as well.
+            'role' => 'required',
         ]);
 
-        $role = Role::where('name', $request->role)->first();
+        $role = Role::where('name', $validatedData['role'])->first();
         if (!$role) {
             return redirect('/dashboard')->with('error', 'Invalid role specified!');
         }
 
-        $user->name = $validatedData['name'];
-        $user->save();
+        // Update the user's name
+        $user->update(['name' => $validatedData['name']]);
 
+        // Assign the specified role to the user
         $user->syncRoles([$role]);
 
         return redirect('/dashboard')->with('success', 'Data berhasil diubah!');
