@@ -21,6 +21,7 @@ class VehicleController extends Controller
 
         $kVerifikator = Transaction::join('vehicles', 'vehicles.id', '=', 'transactions.id_vehicles')
             ->where('transactions.id_users', '=', Auth::id())
+            ->where('vehicles.status', '!=', 'tersedia')
             ->get();
 
         return view('dashboard.kendaraan', compact('kendaraan', 'kVerifikator'));
